@@ -1163,7 +1163,42 @@
         .rating-row {
           justify-content: center;
         }
+        .section-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
+
+      @media (max-width: 640px) {
+        .search-box {
+          flex-direction: column;
+          gap: 12px;
+          padding: 14px;
+          border-radius: 16px;
+        }
+        .search-box input {
+          width: 100%;
+          min-width: 100%;
+          padding: 10px 4px;
+          font-size: 16px;
+        }
+        .search-box #searchBtn {
+          width: 100%;
+          padding: 12px 16px;
+          border-radius: 12px;
+          gap: 8px;
+        }
+        .search-icon {
+          position: absolute;
+          left: 14px;
+          top: 18px;
+          font-size: 14px;
+        }
+        .search-box input {
+          padding-left: 32px;
+        }
+      }
+
       @media (max-width: 480px) {
         .logo {
           font-weight: 800;
@@ -1183,26 +1218,41 @@
           font-size: 16px;
           animation: logoPulse 3s ease-in-out infinite;
         }
-      }
-      .section-header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .footer-row {
-        flex-direction: column;
-        text-align: center;
-      }
-      .footer-links {
-        justify-content: center;
-      }
-      .cat-row {
-        justify-content: flex-start;
-      }
-      .search-box {
-        flex-wrap: wrap;
-      }
-      .search-box input {
-        min-width: 100%;
+        .search-wrap {
+          padding: 0 4px;
+        }
+        .search-box {
+          flex-direction: column;
+          gap: 10px;
+          padding: 12px;
+        }
+        .search-icon {
+          position: static;
+          margin-bottom: -8px;
+        }
+        .search-box input {
+          width: 100%;
+          font-size: 16px;
+          padding: 12px 8px;
+          border-radius: 10px;
+        }
+        .search-box #searchBtn {
+          width: 100%;
+          font-size: 14px;
+          padding: 11px 14px;
+        }
+        .cat-row {
+          justify-content: flex-start;
+          gap: 6px;
+        }
+        .cat-pill {
+          padding: 6px 14px;
+          font-size: 12px;
+        }
+        .footer-row {
+          flex-direction: column;
+          text-align: center;
+        }
       }
     </style>
   </head>
