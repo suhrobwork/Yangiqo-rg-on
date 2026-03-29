@@ -557,7 +557,7 @@
         font-weight: 600;
       }
       .sort-select {
-        background: rgba(255, 255, 255, 0.04);
+        background: transparent;
         border: 1px solid var(--border);
         color: var(--text);
         padding: 8px 16px;
@@ -568,8 +568,15 @@
         outline: none;
         transition: all 0.3s var(--ease);
       }
+      .sort-select option {
+        background: #111; /* yoki transparent emas, qoraroq rang ber */
+        color: #fff;
+        border: none;
+        font-weight: bold;
+      }
       .sort-select:focus {
         border-color: var(--accent);
+        background-color: transparent;
       }
 
       /* ── GRID ── */
